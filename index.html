@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ee4d2d">
+<meta name="description" content="Dona de Casa Shopee: achadinhos, organização, cozinha e decoração para deixar sua casa ainda melhor.">
+<title>Dona de Casa Shopee | Achadinhos para sua casa</title>
+<style>
+:root{--orange:#ee4d2d;--orange2:#d94324;--ink:#2b2624;--muted:#766d69;--bg:#fff9f6;--line:#f0e6e1;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}a{color:inherit;text-decoration:none}button,input,select{font:inherit}
+.top{background:#2b2624;color:white;text-align:center;padding:9px 14px;font-size:12px;letter-spacing:.2px}
+header{position:sticky;top:0;z-index:5;background:#fff;box-shadow:0 3px 16px #35251d0b}.nav{max-width:1160px;margin:auto;display:flex;align-items:center;gap:20px;padding:15px 22px}.brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:20px;line-height:1.05;white-space:nowrap}.brand-icon{display:grid;place-items:center;background:#fff0e9;border-radius:12px;width:42px;height:42px;font-size:23px}.brand b{color:var(--orange)}.search{display:flex;flex:1;border:1px solid #f1c8ba;border-radius:12px;overflow:hidden;background:#fff}.search input{border:0;outline:0;min-width:0;width:100%;padding:12px 14px}.search button{border:0;background:var(--orange);color:white;font-weight:800;padding:0 17px;cursor:pointer}
+.hero{max-width:1160px;padding:25px 22px 8px;margin:auto}.hero-panel{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:42px;border-radius:24px;background:linear-gradient(115deg,#fff0e8 0%,#ffe0d2 63%,#ffd2bf 100%)}.hero-panel:after{content:"";position:absolute;width:300px;height:300px;border:35px solid #ffffff55;border-radius:50%;right:8%;top:-90px}.hero-copy{position:relative;z-index:1;max-width:650px}.eyebrow{font-size:12px;letter-spacing:1.3px;font-weight:900;text-transform:uppercase;color:var(--orange2)}h1{font-size:clamp(32px,4.4vw,51px);line-height:1.04;letter-spacing:-1.4px;margin:13px 0 14px}.hero p{max-width:570px;color:#69534b;line-height:1.65;margin:0 0 22px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:var(--orange);color:white;border:0;border-radius:11px;padding:13px 17px;font-weight:800;cursor:pointer}.btn:hover{background:var(--orange2)}.hero-emoji{position:relative;z-index:1;font-size:112px;min-width:155px;text-align:center;filter:drop-shadow(0 12px 9px #c75c3540)}
+main{max-width:1160px;margin:auto;padding:0 22px 42px}.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:29px 0 15px}.section-title h2{font-size:25px;margin:0;letter-spacing:-.4px}.section-title p{margin:6px 0 0;color:var(--muted);font-size:14px}.categories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.cat{background:white;border:1px solid var(--line);border-radius:15px;padding:17px 9px;text-align:center;cursor:pointer;color:var(--ink);transition:.18s}.cat:hover,.cat.active{border-color:var(--orange);box-shadow:0 5px 15px #ee4d2d12;transform:translateY(-2px)}.cat span{display:block;font-size:29px;margin-bottom:8px}.cat strong{font-size:13px}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:18px 0 14px}.count{font-size:13px;color:var(--muted)}.toolbar select{border:1px solid #e6d8d1;border-radius:9px;padding:9px 11px;background:white;color:var(--ink)}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.product{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:.2s}.product:hover{transform:translateY(-3px);box-shadow:0 12px 26px #3b25140c}.visual{height:158px;display:grid;place-items:center;background:linear-gradient(135deg,#fff2eb,#fffaf7);position:relative}.visual .emoji{font-size:67px}.tag{position:absolute;top:11px;left:11px;border-radius:7px;background:#fff;color:var(--orange2);font-size:10px;font-weight:900;letter-spacing:.4px;padding:6px 8px}.details{padding:15px;display:flex;flex-direction:column;flex:1}.details h3{font-size:15px;line-height:1.4;margin:0 0 7px}.details p{font-size:12px;line-height:1.55;color:var(--muted);margin:0 0 14px}.price{font-size:13px;font-weight:800;margin-top:auto;margin-bottom:12px;color:#54443e}.price span{display:block;font-size:11px;color:#93857e;font-weight:normal;margin-top:3px}.details .btn{font-size:12px;padding:11px}.disclosure{margin:20px 0 0;color:#81746e;font-size:11px;line-height:1.7}
+.empty{grid-column:1/-1;padding:35px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:15px;color:var(--muted)}
+footer{background:#2b2624;color:#fff;padding:29px 22px}.foot{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.foot strong{font-size:15px}.foot p{font-size:12px;line-height:1.7;color:#d0c5c0;max-width:670px}.foot a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:850px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.categories{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-panel{padding:32px 27px}.hero-emoji{font-size:85px;min-width:105px}}
+@media(max-width:540px){.nav{padding:12px 15px;gap:12px;flex-wrap:wrap}.brand{font-size:18px}.brand-icon{width:37px;height:37px}.search{order:2;flex-basis:100%}.hero,main{padding-left:15px;padding-right:15px}.hero-panel{padding:27px 21px}.hero-emoji{display:none}h1{font-size:35px}.categories{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.cat{padding:14px 7px}.products{gap:10px}.visual{height:118px}.visual .emoji{font-size:52px}.details{padding:11px}.details h3{font-size:13px}.details p{font-size:11px}.section-title h2{font-size:22px}.section-title{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="top">🏡 Achadinhos que deixam sua casa mais prática, bonita e organizada!</div>
+<header><div class="nav">
+<a class="brand" href="#" aria-label="Dona de Casa Shopee início"><span class="brand-icon">🛍️</span><span><b>Dona de Casa</b><br>Shopee</span></a>
+<form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Buscar organizadores, cozinha, decoração..." aria-label="Buscar produtos"><button type="submit">Buscar</button></form>
+</div></header>
+<section class="hero"><div class="hero-panel">
+<div class="hero-copy"><div class="eyebrow">Seu cantinho de achadinhos</div><h1>Mais praticidade e carinho para sua casa.</h1><p>Descubra ideias para organizar, decorar e facilitar a rotina. Encontre seus próximos achadinhos e confira os detalhes diretamente na Shopee.</p><a class="btn" href="#produtos">Explorar achadinhos <span aria-hidden="true">→</span></a></div>
+<div class="hero-emoji" aria-hidden="true">🏡🧡</div>
+</div></section>
+<main>
+<section aria-labelledby="categoriasTitle"><div class="section-title"><div><h2 id="categoriasTitle">O que você procura?</h2><p>Escolha um cantinho da casa para começar.</p></div></div>
+<div class="categories" id="categories">
+<button class="cat active" data-category="Todos"><span>✨</span><strong>Todos</strong></button>
+<button class="cat" data-category="Cozinha"><span>🍳</span><strong>Cozinha</strong></button>
+<button class="cat" data-category="Organização"><span>🧺</span><strong>Organização</strong></button>
+<button class="cat" data-category="Decoração"><span>🪴</span><strong>Decoração</strong></button>
+<button class="cat" data-category="Limpeza"><span>🧽</span><strong>Limpeza</strong></button>
+</div></section>
+<section id="produtos" aria-labelledby="productsTitle"><div class="section-title"><div><h2 id="productsTitle">Achadinhos para sua casa</h2><p>Toque em “Ver na Shopee” para conferir os resultados.</p></div></div>
+<div class="toolbar"><span class="count" id="count" aria-live="polite">8 achadinhos</span><select id="sort" aria-label="Ordenar produtos"><option value="featured">Em destaque</option><option value="name">Nome: A–Z</option></select></div>
+<div class="products" id="products"></div>
+</section>
+<p class="disclosure"><strong>Transparência:</strong> Este site é uma vitrine independente e não é a loja oficial da Shopee. Alguns links podem ser de afiliado quando substituídos pelos seus links aprovados; isso pode gerar comissão sem custo extra para você. Os produtos mostrados são exemplos e os botões levam a pesquisas gerais. Confira preço, frete, avaliações e vendedor na página de destino.</p>
+</main>
+<footer><div class="foot"><div><strong>🏡 Dona de Casa Shopee</strong><p>Achadinhos para facilitar sua rotina e deixar seu lar com a sua cara.</p></div><div><strong>Sobre os links</strong><p>Vitrine independente. Para receber comissão, cadastre-se no programa de afiliados, gere seus links oficiais e substitua os links de exemplo neste site.</p></div></div></footer>
+<script>
+const products=[
+{name:"Organizador multiuso para armário",category:"Organização",emoji:"🧺",tag:"MAIS ORGANIZAÇÃO",description:"Ajuda a aproveitar melhor gavetas, prateleiras e armários.",keyword:"organizador multiuso armario"},
+{name:"Potes herméticos para mantimentos",category:"Cozinha",emoji:"🥫",tag:"COZINHA",description:"Uma ideia prática para guardar alimentos e organizar a despensa.",keyword:"potes hermeticos mantimentos"},
+{name:"Suporte para temperos",category:"Cozinha",emoji:"🧂",tag:"ACHADINHO",description:"Deixe os temperos mais acessíveis durante o preparo das refeições.",keyword:"suporte organizador temperos"},
+{name:"Luminária decorativa",category:"Decoração",emoji:"💡",tag:"DECORAÇÃO",description:"Um toque aconchegante para renovar seu ambiente.",keyword:"luminaria decorativa casa"},
+{name:"Vasos decorativos",category:"Decoração",emoji:"🪴",tag:"PARA O LAR",description:"Detalhes simples para dar vida a prateleiras e mesas.",keyword:"vasos decorativos sala"},
+{name:"Kit de panos de microfibra",category:"Limpeza",emoji:"🧽",tag:"ROTINA PRÁTICA",description:"Uma opção versátil para ajudar na limpeza do dia a dia.",keyword:"kit panos microfibra limpeza"},
+{name:"Cesto organizador",category:"Organização",emoji:"🧺",tag:"ORGANIZAÇÃO",description:"Ideal para agrupar pequenos objetos e manter tudo no lugar.",keyword:"cesto organizador casa"},
+{name:"Escorredor de louças",category:"Cozinha",emoji:"🍽️",tag:"COZINHA",description:"Ajuda a organizar a pia após lavar a louça.",keyword:"escorredor de loucas cozinha"}
+];
+let activeCategory="Todos",searchText="";
+const grid=document.getElementById("products");
+function searchUrl(keyword){return "https://shopee.com.br/search?keyword="+encodeURIComponent(keyword);}
+function render(){
+ let list=products.filter(p=>(activeCategory==="Todos"||p.category===activeCategory)&&(p.name+" "+p.category+" "+p.description).toLocaleLowerCase("pt-BR").includes(searchText));
+ if(document.getElementById("sort").value==="name")list.sort((a,b)=>a.name.localeCompare(b.name,"pt-BR"));
+ document.getElementById("count").textContent=list.length+" achadinho"+(list.length===1?"":"s");
+ grid.innerHTML=list.length?list.map(p=>`<article class="product"><div class="visual"><span class="tag">${p.tag}</span><span class="emoji" aria-hidden="true">${p.emoji}</span></div><div class="details"><h3>${p.name}</h3><p>${p.description}</p><div class="price">Confira opções e preços<span>Preço e frete na Shopee</span></div><a class="btn" href="${searchUrl(p.keyword)}" target="_blank" rel="noopener noreferrer sponsored">Ver na Shopee ↗</a></div></article>`).join(""):'<div class="empty">Não encontramos achadinhos com essa busca. Tente outra palavra.</div>';
+}
+document.getElementById("searchForm").addEventListener("submit",e=>{e.preventDefault();searchText=document.getElementById("searchInput").value.trim().toLocaleLowerCase("pt-BR");render();document.getElementById("produtos").scrollIntoView({behavior:"smooth"});});
+document.getElementById("searchInput").addEventListener("input",e=>{searchText=e.target.value.trim().toLocaleLowerCase("pt-BR");render();});
+document.getElementById("sort").addEventListener("change",render);
+document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".cat").forEach(x=>x.classList.remove("active"));b.classList.add("active");activeCategory=b.dataset.category;render();}));
+render();
+</script>
+</body>
+</html>
